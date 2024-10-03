@@ -8,4 +8,6 @@ conda activate main-ds
 pip install -r requirements.txt
 ```
 # Streamlit
+```bash
 streamlit run dashboard.py
+```
