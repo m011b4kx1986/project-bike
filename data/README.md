@@ -1,1 +1,2 @@
-"# project-bike" 
+# Project Bike Usage Dashboard
+## Setup Environment - Anaconda
