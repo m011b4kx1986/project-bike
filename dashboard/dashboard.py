@@ -12,7 +12,7 @@ import numpy as np
 st.title('Data Penggunaan Sepeda Tahun 2011')
 st.header('Visualisasi Data')
 
-data = pd.read_csv('C:/Users/hp/Downloads/data_processed.csv')
+data = pd.read_csv('all-data.csv')
 
 tab1, tab2 = st.tabs(["Total Pengguna", "Kategori"])
 
