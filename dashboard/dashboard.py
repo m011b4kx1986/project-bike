@@ -69,8 +69,8 @@ with tab2:
         category_df = main_df.groupby('mnth')[['casual', 'registered']].sum().reset_index()
         
         # Spesific month
-        bulan_tersedia = category_df['mnth'].values
-        x = np.arange(len(bulan_tersedia))
+        months = category_df['mnth'].values
+        x = np.arange(len(months))
         lebar = 0.35  # bar width
         
         fig, ax = plt.subplots()
@@ -85,7 +85,7 @@ with tab2:
         ax.set_xlabel('Bulan')
         ax.set_ylabel('Jumlah Pengguna Sepeda')
         ax.set_xticks(x)  
-        ax.set_xticklabels([f"Bulan {int(bulan)}" for bulan in bulan_tersedia])  
+        ax.set_xticklabels([f"Bulan {int(month)}" for month in months])  
         ax.legend() 
         st.pyplot(fig)
 
