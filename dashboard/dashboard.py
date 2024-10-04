@@ -25,7 +25,7 @@ def create_category_users_df(df):
     return category_user_df
 
 # Load data
-data = pd.read_csv("all-data.csv")
+data = pd.read_csv("dashboard/all-data.csv")
 data['dteday'] = pd.to_datetime(data['dteday'])
 
 min_date = data["dteday"].min()
